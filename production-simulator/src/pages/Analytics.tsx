@@ -383,8 +383,8 @@ const EventLogTable = () => {
 			const date = new Date(event.timestamp);
 			return [
 				event.timestamp,
-				date.toLocaleDateString('pl-PL'),
-				date.toLocaleTimeString('pl-PL'),
+				date.toLocaleDateString('en-US'),
+				date.toLocaleTimeString('en-US'),
 				event.type.replace(/_/g, ' ').toUpperCase(),
 				`"${event.message.replace(/"/g, '""')}"`, // Escape quotes in CSV
 				event.severity.toUpperCase(),
@@ -416,7 +416,7 @@ const EventLogTable = () => {
 			events: eventLog.map(event => ({
 				id: event.id,
 				timestamp: event.timestamp,
-				dateFormatted: new Date(event.timestamp).toLocaleString('pl-PL'),
+				dateFormatted: new Date(event.timestamp).toLocaleString('en-US'),
 				type: event.type,
 				typeFormatted: event.type.replace(/_/g, ' ').toUpperCase(),
 				message: event.message,
@@ -494,7 +494,7 @@ const EventLogTable = () => {
 		// Subtitle
 		dashboard.mergeCells('B3:E3');
 		const subtitleCell = dashboard.getCell('B3');
-		subtitleCell.value = `Generated: ${now.toLocaleString('pl-PL')} | Runtime: ${productionTime.toFixed(1)} min`;
+		subtitleCell.value = `Generated: ${now.toLocaleString('en-US')} | Runtime: ${productionTime.toFixed(1)} min`;
 		subtitleCell.font = { name: 'Segoe UI', size: 10, color: { argb: colors.muted } };
 		subtitleCell.alignment = { horizontal: 'center' };
 
@@ -721,8 +721,8 @@ const EventLogTable = () => {
 			const date = new Date(event.timestamp);
 			const row = eventsSheet.addRow({
 				index: index + 1,
-				date: date.toLocaleDateString('pl-PL'),
-				time: date.toLocaleTimeString('pl-PL'),
+				date: date.toLocaleDateString('en-US'),
+				time: date.toLocaleTimeString('en-US'),
 				type: event.type.replace(/_/g, ' ').toUpperCase(),
 				severity: event.severity.toUpperCase(),
 				message: event.message,

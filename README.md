@@ -26,7 +26,7 @@
 
 <br/>
 
-**🔥 FORGE LAB • Hackathon dla Małopolski 2025**
+**🔥 FORGE LAB • Regional Hackathon 2025**
 
 ---
 
@@ -447,7 +447,7 @@ production-simulator/
 
 <br/>
 
-**Crafted with precision for Hackathon dla Małopolski 2025**
+**Crafted with precision for Regional Hackathon 2025**
 
 <br/>
 

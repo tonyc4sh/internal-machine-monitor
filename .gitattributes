@@ -1,0 +1,19 @@
+# Linguist overrides for GitHub language statistics
+
+# Mark vendor/generated files
+production-simulator/package-lock.json linguist-generated=true
+*.mp4 linguist-vendored=true
+
+# Detect languages properly
+*.ts linguist-detectable=true
+*.tsx linguist-detectable=true
+*.js linguist-detectable=true
+*.css linguist-detectable=true
+*.html linguist-detectable=true
+
+# Mark documentation
+*.md linguist-documentation=true
+production-simulator/docs/* linguist-documentation=true
+
+# Mark recordings as vendored (not source code)
+production-simulator/recordings/* linguist-vendored=true
